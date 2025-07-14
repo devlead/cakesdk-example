@@ -1,5 +1,5 @@
 #:sdk Cake.Sdk
-#:package Cake.BuildSystems.Module@7.1.0
+#:package Cake.BuildSystems.Module@8.0.0
 
 var target = Argument("target", "Pack");
 
