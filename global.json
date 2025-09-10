@@ -1,8 +1,8 @@
 {
   "sdk": {
-    "version": "10.0.100-preview.7.25380.108"
+    "version": "10.0.100-rc.1.25451.107"
   },
   "msbuild-sdks": {
-    "Cake.Sdk": "5.0.25225.53-beta"
+    "Cake.Sdk": "5.0.25253.70-beta"
   }
 }
