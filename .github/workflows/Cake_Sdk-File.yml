@@ -23,5 +23,5 @@ jobs:
       - name: Run Cake File
         uses: cake-build/cake-action@master
         with:
-          file-path: build.cs
+          file-path: cake.cs
           target: GitHubActions

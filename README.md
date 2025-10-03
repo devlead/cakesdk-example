@@ -13,9 +13,9 @@ This repository demonstrates minimal, modern usage of [Cake.Sdk](https://www.nug
 
 ## Features
 
-- **File-based build script**: Standalone `build.cs` using Cake Sdk directives.
-- **Multi-file-based build script**: `multifile-build/build.cs` with additional files in build folder.
-- **Advanced multi-file-based build script**: `multifile-build-advanced/build.cs` with organized structure, dependency injection, and service patterns.
+- **File-based build script**: Standalone `cake.cs` using Cake Sdk directives.
+- **Multi-file-based build script**: `multifile-build/cake.cs` with additional files in build folder.
+- **Advanced multi-file-based build script**: `multifile-build-advanced/cake.cs` with organized structure, dependency injection, and service patterns.
 - **Project-based build script**: `build/build.csproj` referencing Cake.Sdk.
 - **Pinned versions**: .NET SDK and Cake.Sdk versions are pinned via `global.json`.
 - **CI examples**: Example GitHub Actions workflows for all approaches.
@@ -24,18 +24,18 @@ This repository demonstrates minimal, modern usage of [Cake.Sdk](https://www.nug
 
 ```
 /
-├── build.cs                  # File-based Cake build script
+├── cake.cs                   # File-based Cake build script
 |
 ├── build/
 │   └── build.csproj          # Project-based Cake build script using Cake.Sdk
 |
 ├── multifile-build/
-│   ├── build.cs              # Multi-file based Cake build script
+│   ├── cake.cs               # Multi-file based Cake build script
 │   └── build/
 │       └── BuildData.cs      # BuildData model for Multi-file build script
 |
 ├── multifile-build-advanced/
-│   ├── build.cs              # Advanced multi-file based Cake build script
+│   ├── cake.cs               # Advanced multi-file based Cake build script
 │   └── build/
 │       ├── Models/
 │       │   └── BuildData.cs  # BuildData model with Rebuild property
@@ -65,7 +65,7 @@ This repository demonstrates minimal, modern usage of [Cake.Sdk](https://www.nug
 - **File-based build**:  
   Run with:  
   ```sh
-  dotnet cake build.cs
+  dotnet cake cake.cs
   ```
 - **Project-based build**:
   Run with:  
@@ -75,12 +75,12 @@ This repository demonstrates minimal, modern usage of [Cake.Sdk](https://www.nug
 - **Multi-file-based build**:
   Run with:
   ```sh
-  dotnet cake multifile-build/build.cs
+  dotnet cake multifile-build/cake.cs
   ```
 - **Advanced multi-file-based build**:
   Run with:
   ```sh
-  dotnet cake multifile-build-advanced/build.cs
+  dotnet cake multifile-build-advanced/cake.cs
   ```
 
 ## Continuous Integration
